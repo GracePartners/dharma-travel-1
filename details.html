@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dharma Travel - La Valle Sacra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#922a8b",
+                        "primary-light": "#efe4ee",
+                        "background-light": "#f9f7f2",
+                        "background-dark": "#1f131e",
+                        "text-dark": "#2d242b",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main font-display antialiased overflow-x-hidden">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-background-light/90 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+<a class="flex items-center gap-2 text-primary cursor-pointer hover:opacity-80 transition-opacity" href="index.html">
+<span class="material-symbols-outlined text-3xl">spa</span>
+<h1 class="text-2xl font-bold tracking-tight text-[#2d242b]">Dharma Travel</h1>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-text-dark/80 hover:text-primary transition-colors" href="index.html">Dharma</a>
+<a class="text-sm font-medium text-text-dark/80 hover:text-primary transition-colors" href="details.html">Journeys</a>
+<a class="text-sm font-medium text-text-dark/80 hover:text-primary transition-colors" href="contacts.html">contacts</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex cursor-pointer items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-semibold shadow-md hover:bg-primary/90 transition-colors">
+                        Prenota una Consulenza
+                    </button>
+<button class="md:hidden text-text-dark p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60 z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="Misty mountain landscape with ancient ruins at sunrise in Peru" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDk6WYqJeFpQtg_dbXMl9k3VilSVY5KVqz-oa7RePy6FAE3DCvtLAlsLIFVcyJGlPV8VgAx7ms25-i1g4JaOoNrpdVMGve74Gcz8dVjF-bdsdHGVbbCUWlbuM7lC-Z01X0YpPEj_j1WiVqlAc5AIZ_P2Wmq1SVoG54bAcOvYI1kX7q65SX5Rxll9vkYZyerniXylir2CRclhmxtezSu3bfEQhIzgwyzd-IDGvJ2qp2bcLWoVCTZKYpOGc1r7J0LzWZwCQlvyf7vJXg');"></div>
+</div>
+<div class="relative z-20 text-center text-white px-4 max-w-4xl mx-auto flex flex-col gap-6 items-center">
+<div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/20">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span class="text-sm font-medium tracking-wide uppercase">10-17 Ottobre 2026</span>
+<span class="mx-2 opacity-50">•</span>
+<span class="text-sm font-medium tracking-wide uppercase">Cusco, Perù</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold leading-tight tracking-tight text-shadow-sm">
+                La Valle Sacra:<br/>Un Viaggio Interiore
+            </h1>
+<p class="text-lg md:text-xl text-white/90 max-w-2xl font-light italic">
+                Riconnettiti con il tuo silenzio interiore tra gli antichi sussurri delle Ande.
+            </p>
+<button class="mt-4 bg-primary text-white text-base font-bold px-8 py-4 rounded-xl hover:bg-primary/90 transition-all hover:scale-105 shadow-xl shadow-primary/30 flex items-center gap-2">
+<span>Inizia il Tuo Viaggio</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</header>
+<main class="relative z-10 bg-background-light dark:bg-background-dark">
+<!-- Transformation Section -->
+<section class="relative py-20 px-6 overflow-hidden">
+<!-- Watercolor Texture Background -->
+<div class="absolute inset-0 watercolor-texture opacity-60 pointer-events-none"></div>
+<div class="max-w-[960px] mx-auto">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1 space-y-6">
+<div class="flex items-center gap-3 text-primary mb-2">
+<span class="material-symbols-outlined">self_improvement</span>
+<h2 class="text-sm font-bold tracking-widest uppercase">Trasformazione</h2>
+</div>
+<h3 class="text-3xl md:text-4xl font-bold text-text-main leading-snug">
+                            Un Ritorno all'Essenza
+                        </h3>
+<p class="text-text-muted text-lg leading-relaxed font-sans">
+<span class="text-4xl float-left mr-2 mt-[-10px] text-primary font-display">Q</span>uesto ritiro è progettato per guidarti verso il tuo centro attraverso la pratica quotidiana, le cerimonie sacre e l'immersione profonda nella natura. Lasciamo alle spalle il rumore del mondo moderno per accordarci alle sottili frequenze della terra e dei nostri cuori.
+                        </p>
+<p class="text-text-muted text-lg leading-relaxed font-sans">
+                            Che tu stia cercando guarigione, chiarezza o semplicemente una pausa, la Valle Sacra crea lo spazio per trasformazioni profonde.
+                        </p>
+</div>
+<div class="flex-1 w-full">
+<div class="grid grid-cols-2 gap-4">
+<div class="h-64 rounded-2xl bg-cover bg-center transform translate-y-8" data-alt="Woman meditating in a peaceful yoga studio with sunlight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAB57ryZUyFYWlqlpl1hprppO4XAZ39doDdGqAHaVhijzrw4Smh8A2iqVH5QeufkOkRfmNbWMqHFu5A6Zj01Y_nMpGy3p5LRD7l2utbwEyX2aSP_8QKarY5zt8taL_ZEB3Lv-d7YdfC6VHs1Xh1QLOJOnGNB63wVmxJtKsL4sYEojMzFZJj4CmtTtIqWF45J_MySp_hfWzT-HPmdIXe8AljPciGS9QEaA1SFfIRK6s1J5r0YRummpXg0iNmmqFAWn7OnJavGic9cSk');"></div>
+<div class="h-64 rounded-2xl bg-cover bg-center" data-alt="Detail shot of incense burning with smoke swirls" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhb-6qLdEPKUAkQ9HlP0zIaAqwEb6irwMh-I3iiU1eaXVqlE3AO6SV2nLLhwV7H1nTdolpkSY9ko_T9MeN_u4J9p5cBRqX78FhUwD0WomzzF9Tn0X6Jbo0cUZHE17nDZ2TDFeA3JeEN477db1KMy-Ykj_p1vak6HOtG1gulIMBcbmyH0sA1vD-g-OyEfWV1-fH9yGFP0wuLI1-JAsE4BzPxivx_Lj3OvpTzAO7PJjvJpce5YKHgiXIKAnchRWau2hmTcI6OPGLx7U');"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Path (Itinerary) -->
+<section class="py-20 px-6 bg-white dark:bg-[#151217]">
+<div class="max-w-[800px] mx-auto">
+<div class="text-center mb-16">
+<div class="flex items-center justify-center gap-3 text-primary mb-2">
+<span class="material-symbols-outlined">hiking</span>
+<h2 class="text-sm font-bold tracking-widest uppercase">Il Percorso</h2>
+</div>
+<h3 class="text-3xl md:text-4xl font-bold text-text-main">Il Tuo Ritmo Giornaliero</h3>
+</div>
+<div class="relative space-y-12 pl-8 md:pl-0">
+<!-- Vertical Line -->
+<div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/20 via-primary to-primary/20 -translate-x-1/2 md:translate-x-0 hidden md:block"></div>
+<div class="absolute left-[31px] top-0 bottom-0 w-px bg-primary/30 md:hidden"></div>
+<!-- Day 1 -->
+<div class="relative md:flex items-center justify-between group">
+<div class="md:w-[45%] mb-4 md:mb-0 md:text-right pr-8">
+<h4 class="text-xl font-bold text-primary">Giorno 1: Arrivo</h4>
+<p class="text-text-muted mt-2 font-sans text-sm">Atterraggio a Cusco. Ceremonia del tè di acclimatamento e meditazione radicante per connetterti con la terra.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 w-4 h-4 rounded-full border-2 border-primary bg-white z-10 -translate-x-[calc(50%-15px)] md:-translate-x-1/2 mt-1.5 md:mt-0"></div>
+<div class="md:w-[45%] pl-8 md:pl-8">
+<div class="h-40 w-full rounded-xl bg-cover bg-center shadow-md opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Cozy rustic bedroom interior with views of mountains" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBC5yEViE9JdS2Zero2JmfiKecuFvhWZ7tZW7X27RJRrU8toh9KmByncjTbB4BXe2Y6ywU2lI2Kw1JRu6mNIySeHGeeuQy4PvFKMiXXucsktEBUNn3Yw-T08rk5KFU4RjTL4Ok3B7gCtMjsAwaMIXEEhB0WZ5CzyxjJ24ZmZnUU0EfQbWLHT2ssoYpIRAKkwCz92Oz19kJMdZhfOGHNtsBL9CNoJ2xJYN2qKn46BcSzCY6_xEZ8P17IfV7EGcqv4klXoVWbFlNO3-E');"></div>
+</div>
+</div>
+<!-- Day 2 -->
+<div class="relative md:flex items-center justify-between flex-row-reverse group">
+<div class="md:w-[45%] mb-4 md:mb-0 pl-8">
+<h4 class="text-xl font-bold text-primary">Giorno 2: Il Tempio Interiore</h4>
+<p class="text-text-muted mt-2 font-sans text-sm">Yoga Vinyasa all'alba seguito da un'escursione silenziosa al Tempio della Luna. Workshop di journaling nel pomeriggio.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary z-10 -translate-x-[calc(50%-15px)] md:-translate-x-1/2 mt-1.5 md:mt-0 shadow-[0_0_10px_rgba(110,42,146,0.5)]"></div>
+<div class="md:w-[45%] pr-8 md:pr-8">
+<div class="h-40 w-full rounded-xl bg-cover bg-center shadow-md opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Group doing yoga outdoors on a mountain deck" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjrYCU7dT9ggPsadXWzDa7-FYgoLb4YOjGxppQtRrOzXgDgGODYCEcgL-1exn9Z9i4cay_bcjyD_1wAJ16btvEczADlBbM6LfrtKKTXFvF3x51W7bMWycwQd9bJVwVix7Cu7AKLU7-6KE-KI3UNrJcafMyCS-u3XuKSaiGtHM9sYP9R4qd8Gz_3jJPnfyPhciscCVuRkir8BcTUi2BLlDQBNAWEhkFTLjIaAuY1rxla8sfLN8SfPz01x8mty_VjVnoeroQCNRPOos');"></div>
+</div>
+</div>
+<!-- Day 3 -->
+<div class="relative md:flex items-center justify-between group">
+<div class="md:w-[45%] mb-4 md:mb-0 md:text-right pr-8">
+<h4 class="text-xl font-bold text-primary">Giorno 3: Acque Sacre</h4>
+<p class="text-text-muted mt-2 font-sans text-sm">Rituale di purificazione alla cascata. Sessione di sound bath sotto le stelle.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 w-4 h-4 rounded-full border-2 border-primary bg-white z-10 -translate-x-[calc(50%-15px)] md:-translate-x-1/2 mt-1.5 md:mt-0"></div>
+<div class="md:w-[45%] pl-8 md:pl-8">
+<div class="h-40 w-full rounded-xl bg-cover bg-center shadow-md opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Serene waterfall flowing into a clear pool in nature" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_C-didOSRgTvqLgYghzxXiZRPH3AzDRJe31mw62PM7GrDwPcaftT-JUsBPCdbOA-rlcgzdBFL-qwoPFJY9hAiTJEn7kJeenUOl14lNiBOKgDFuf0dvEyCmwDJXpKUb9F8rujPHNHbLzR4bJT-_TTasS1rAmc_XOHGMhiMk36Sp5v92JP0B6Sp5pwaVE0Y6xnfGJp08AWZSBEMEFmxdAI8OwKyc1vh30iyeReq4lsHboriJ8Vc7b8uWZ807H6VYOy8eNyh98mW8SA');"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Guide Section -->
+<section class="py-24 px-6 relative overflow-hidden">
+<!-- Watercolor Texture Background -->
+<div class="absolute right-0 top-0 w-1/2 h-full watercolor-texture opacity-40 pointer-events-none transform translate-x-1/3"></div>
+<div class="max-w-[960px] mx-auto">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="relative shrink-0">
+<div class="w-64 h-80 rounded-t-full rounded-b-[100px] overflow-hidden shadow-2xl relative z-10">
+<img alt="Portrait of Elena Sol, smiling warmly" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWLMZBsucK9LIm3XQFCmGNS1OH_GEH0sYr2dzqtSrhj-qFWMDv_TXGPa0KqJ0IQmVEM4atcNHrZguuap7CQkvA-BN4jhquFOIieeI_GIe7Tb5vs--SvqBEgS8vK2Q1_OSmHO-Rjqy7jkon22yLOwSS2vpuifzfLkHn4eoMGFICuxFLqfW9CYPw3VMwblqQa4HuCIO-NHESJp8g0dcqT5B3xFD_VVU_ZuNE_OIHHe0G5WabTNiajRku8QuaD4n04Az6G0UDxTckS2s"/>
+</div>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full z-0"></div>
+<div class="absolute top-10 -left-6 w-16 h-16 border-2 border-primary/20 rounded-full z-0"></div>
+</div>
+<div class="flex-1 text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/5 rounded-full mb-4">
+<span class="material-symbols-outlined text-primary text-sm">local_florist</span>
+<span class="text-primary text-xs font-bold uppercase tracking-wider">La Tua Guida</span>
+</div>
+<h3 class="text-3xl md:text-4xl font-bold text-text-main mb-2">Elena Sol</h3>
+<p class="text-primary font-medium mb-6">Guaritrice Olistica & Maestra di Yoga</p>
+<p class="text-text-muted text-lg mb-6 leading-relaxed font-sans">
+                            "La mia missione è creare spazi sicuri dove le persone possano ricordare chi sono veramente. Attraverso movimento, respiro e silenzio, rimuoviamo gli strati per rivelare la luce radiosa che è in noi."
+                        </p>
+<div class="flex flex-wrap justify-center md:justify-start gap-3">
+<span class="px-4 py-2 bg-white border border-[#f3f1f4] rounded-lg text-sm font-medium text-text-muted shadow-sm">20+ Anni di Esperienza</span>
+<span class="px-4 py-2 bg-white border border-[#f3f1f4] rounded-lg text-sm font-medium text-text-muted shadow-sm">Certificata Yoga Alliance</span>
+<span class="px-4 py-2 bg-white border border-[#f3f1f4] rounded-lg text-sm font-medium text-text-muted shadow-sm">Maestra Reiki</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing & CTA -->
+<section class="py-20 px-6 bg-[#f3f1f4] dark:bg-[#251b2a]">
+<div class="max-w-[960px] mx-auto">
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Pricing Card 1 -->
+<div class="bg-white dark:bg-[#1b131f] p-8 rounded-2xl shadow-sm border border-transparent hover:border-primary/30 transition-all group">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="text-xl font-bold text-text-main">Santuario Condiviso</h4>
+<p class="text-sm text-text-muted">Letto singolo in camera condivisa di lusso</p>
+</div>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase">Popolare</span>
+</div>
+<div class="mb-6">
+<span class="text-3xl font-bold text-primary">€2.450</span>
+<span class="text-text-muted text-sm">/ persona</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-sm text-text-muted">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>7 Notti di Alloggio</span>
+</li>
+<li class="flex items-center gap-3 text-sm text-text-muted">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Tutti i Pasti Plant-Based</span>
+</li>
+<li class="flex items-center gap-3 text-sm text-text-muted">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Workshop e Lezioni Giornaliere</span>
+</li>
+</ul>
+<button class="w-full py-3 rounded-xl border border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all">Seleziona Condiviso</button>
+</div>
+<!-- Pricing Card 2 -->
+<div class="bg-white dark:bg-[#1b131f] p-8 rounded-2xl shadow-lg border border-primary/20 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="text-xl font-bold text-text-main">Rifugio Privato</h4>
+<p class="text-sm text-text-muted">Letto matrimoniale in suite privata con vista</p>
+</div>
+</div>
+<div class="mb-6">
+<span class="text-3xl font-bold text-primary">€3.200</span>
+<span class="text-text-muted text-sm">/ persona</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-sm text-text-muted">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Tutte le Inclusioni Condivise</span>
+</li>
+<li class="flex items-center gap-3 text-sm text-text-muted">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Bagno Privato in Camera</span>
+</li>
+<li class="flex items-center gap-3 text-sm text-text-muted">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Sessione 1-a-1 con Elena</span>
+</li>
+</ul>
+<button class="w-full py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">Inizia il Tuo Viaggio</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background-light border-t border-primary/10 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
+<div class="mb-8 flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary">spa</span>
+<h2 class="text-2xl font-bold text-[#2d242b]">Dharma Travel</h2>
+</div>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 text-text-dark/70 font-medium">
+<a class="hover:text-primary transition-colors" href="index.html">Dharma</a>
+<a class="hover:text-primary transition-colors" href="details.html">Journeys</a>
+<a class="hover:text-primary transition-colors" href="contacts.html">Contatti</a>
+</div>
+<div class="max-w-lg mx-auto mb-10">
+<p class="text-primary italic font-display text-lg">
+                        "Il viaggio di mille miglia inizia con un solo passo."
+                    </p>
+<p class="text-xs text-text-dark/40 mt-2 uppercase tracking-widest">— Lao Tzu</p>
+</div>
+<div class="flex gap-6 mb-10">
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-text-dark hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-text-dark hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">facebook</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-text-dark hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">smart_display</span>
+</a>
+</div>
+<div class="w-full border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-text-dark/50 gap-4">
+<p>© 2026 Dharma Travel. Tutti i diritti riservati.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Termini di Servizio</a>
+</div>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

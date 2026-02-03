@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dharma Travel - Casa Spirituale</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#922a8b",
+                        "primary-light": "#efe4ee",
+                        "background-light": "#f9f7f2", /* Adjusted to be creamier/warmer per request */
+                        "background-dark": "#1f131e",
+                        "text-dark": "#2d242b",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "organic": "48% 52% 68% 32% / 42% 28% 72% 58%", /* Custom organic blob shape */
+                        "full": "9999px"
+                    },
+                    backgroundImage: {
+                        'mandala-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23922a8b' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Noto Serif", serif;
+        }
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        /* Smooth fade for hover effects */
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-dark antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="fixed top-0 z-50 w-full transition-all duration-300 bg-background-light/90 backdrop-blur-sm border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+<a class="flex items-center gap-2 text-primary cursor-pointer hover:opacity-80 transition-opacity" href="index.html">
+<span class="material-symbols-outlined text-3xl">spa</span>
+<h1 class="text-2xl font-bold tracking-tight text-[#2d242b]">Dharma Travel</h1>
+</a>
+<!-- Desktop Menu -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-text-dark/80 hover:text-primary transition-colors" href="index.html">Dharma</a>
+<a class="text-sm font-medium text-text-dark/80 hover:text-primary transition-colors" href="details.html">Journeys</a>
+<a class="text-sm font-medium text-text-dark/80 hover:text-primary transition-colors" href="contacts.html">Contatti</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex cursor-pointer items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-semibold shadow-md hover:bg-primary/90 transition-colors">
+                        Prenota una Consulenza
+                    </button>
+<button class="md:hidden text-text-dark p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="relative w-full h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Woman meditating in a serene foggy forest landscape" class="w-full h-full object-cover" data-alt="Woman meditating in a serene foggy forest landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByqbk1wJliA8z6pQL3fy1FiE-pbSutW06X_nee2RZ4dbL9neKV-stm-oZRIEyYJ9O5qwyxXY3pvWR3UysEK0AivlicMseQuipdMKScIMYmQ-lSUUrclaPrlFCRZ2AB_Ala546RxYGUVW8uYhzr1sxZO_ZU7jxLF6jZTTuME8_8ZOuyEdlfnw999OIWLp2aOyD7q3eLPJtaaRt3IF3yysmnm9HXlVJfqt-M3Q0NlwgrLDcGA9qnFPKkOMCZ4wSAwX_HqjVpGV_Phh4"/>
+<div class="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-background-light/90"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 container mx-auto px-4 text-center max-w-4xl mt-12">
+<div class="inline-flex items-center justify-center p-3 mb-6 rounded-full bg-white/30 backdrop-blur-md border border-white/40 text-primary-dark animate-fade-in-up">
+<span class="material-symbols-outlined text-primary mr-2">spa</span>
+<span class="text-sm font-medium text-primary-900 tracking-wide uppercase">Viaggi Spirituali di Benessere</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-display font-light text-[#2d242b] leading-[1.1] mb-6 drop-shadow-sm">
+                        Trova il Tuo Percorso <br/>
+<span class="italic font-normal text-primary">Torna al Centro</span>
+</h1>
+<p class="text-lg md:text-xl text-text-dark/80 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                        Viaggi spirituali curati per l'anima che si risveglia, guidandoti verso luoghi di pace, introspezione e profonda trasformazione.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<button class="h-12 px-8 rounded-full bg-primary text-white font-medium shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all transform hover:-translate-y-0.5">
+                            Scopri i Nostri Ritiri
+                        </button>
+<button class="h-12 px-8 rounded-full bg-white border border-primary/20 text-primary font-medium shadow-sm hover:bg-primary/5 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+                            Guarda il Nostro Film
+                        </button>
+</div>
+</div>
+<!-- Decorative Bottom Curve -->
+<div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+<svg class="relative block w-full h-[60px]" data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path class="fill-background-light" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+</svg>
+</div>
+</section>
+<!-- Philosophy Section (Mandala Divider) -->
+<section class="py-20 px-6 bg-background-light relative">
+<div class="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
+<div class="text-primary/40 animate-spin-slow" style="animation-duration: 20s;">
+<span class="material-symbols-outlined text-6xl font-light">all_inclusive</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-[#2d242b]">Il Viaggio Interiore</h2>
+<div class="w-24 h-[1px] bg-primary/30"></div>
+<p class="text-lg text-text-dark/70 font-light leading-relaxed">
+                        Crediamo che viaggiare non significhi solo spostare il corpo, ma muovere l'anima. Le nostre esperienze sono progettate per aiutarti a disconnetterti dal rumore e riconnetterti con la tua essenza. Ogni destinazione è una porta verso una comprensione più profonda di te stesso.
+                    </p>
+</div>
+</section>
+<!-- Curated Experiences (Circular Cards) -->
+<section class="py-16 px-6 bg-white/50 relative">
+<!-- Background Pattern -->
+<div class="absolute inset-0 bg-mandala-pattern opacity-30 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 px-4">
+<div>
+<span class="text-primary font-medium tracking-wider uppercase text-sm mb-2 block">Le Nostre Proposte</span>
+<h2 class="text-3xl md:text-4xl font-bold text-[#2d242b]">Esperienze Curate</h2>
+</div>
+<a class="hidden md:flex items-center gap-1 text-primary hover:text-primary/80 transition-colors mt-4 md:mt-0 group" href="#">
+                            Vedi tutti i viaggi 
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+<!-- Card 1 -->
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 relative hover-lift">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors z-10 pointer-events-none"></div>
+<img alt="Woman doing yoga by the water at sunrise" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Woman doing yoga by the water at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAupa9H_qMF6JzlNkfvwyvAHpUkUAf0Oo1gwSgKvtpbmJdm9YQTMFHLW9jcsfJmWYvjCABDwF9MKNBq-ljUCCCqnwFil5JxIxyDiU-yV6MovQhVfDL3Cbl7QMrwhFrKbzH5G-HvXwgrYlxYqfeUT1xiwBoDYfxqTc09bKwJ601w5uQ_tAwE6TtMBJI_Q9-KgPakcR4DVXeaPMibMf0Qh3S1Qg9Hs8NwBU7w0r7U1nsmxW2gFdsN6iidRdj5kSN7nh6Onr6P03VzYQ"/>
+</div>
+<h3 class="text-2xl font-bold text-[#2d242b] mb-2 group-hover:text-primary transition-colors">Ritiri dell'Anima</h3>
+<p class="text-text-dark/60 max-w-xs text-sm leading-relaxed">Programmi immersivi di benessere che integrano yoga, meditazione e guarigione olistica.</p>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col items-center text-center group cursor-pointer md:mt-16"> <!-- Staggered layout -->
+<div class="w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 relative hover-lift">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors z-10 pointer-events-none"></div>
+<img alt="Ancient temple in mountains with prayer flags" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Ancient temple in mountains with prayer flags" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAugYAMpsP3AjtN-sCxyWBvF4hqvRtM6DaFb6CPhqhgxUXszbz0odFO9LE6lLEB_wo9m3VQJ0kThy6qfQZ-ujv6-RUp9IQ7oI3-NxMD8WGQKk_af5aF1XRmiWGX2ry4ooEPAzfjt0DBAQrc6dEdSdEduxLQv8V9ytwFCYzi3RnptKSou-S3A2x6x8CrkTKfPhg1T4WU6Ko97lloE0ZCpshnnLruihP4bjidF6GekVy_m2XdAIHbtDMumA1nRXKL7hIPayzLy0FAXRg"/>
+</div>
+<h3 class="text-2xl font-bold text-[#2d242b] mb-2 group-hover:text-primary transition-colors">Pellegrinaggi Sacri</h3>
+<p class="text-text-dark/60 max-w-xs text-sm leading-relaxed">Viaggi verso i luoghi più energetici del mondo, onorando la saggezza e la cultura antica.</p>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 relative hover-lift">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors z-10 pointer-events-none"></div>
+<img alt="Hands holding healing stones and crystals" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Hands holding healing stones and crystals" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOTrREslHv_hLmBu-BWFoqueTyJI_Yob6DNApG1EbpcP3WHdaShKZJc2zm6adQed26RlvfGHJfMr3i9NBjkMxqWTRezAgXAk_J1PFYQJHC044nzmqjFcx_ohda9Vl75_fpthAcHdoSCyLh0tsacOmkWnSNZFKU2KHN7x6ezUpTcm9MIjnsd8mg9LXPwB24QtB014Y2Cmmbex9hxSMVbz3OC5ibG1b1Z2w48bKM0PlPTiqFG_QpfP0P1u7XMxoSh7WsPSmbWZnX3G8"/>
+</div>
+<h3 class="text-2xl font-bold text-[#2d242b] mb-2 group-hover:text-primary transition-colors">Vita Consapevole</h3>
+<p class="text-text-dark/60 max-w-xs text-sm leading-relaxed">Workshop ed esperienze per coltivare la presenza e la consapevolezza nella vita quotidiana.</p>
+</div>
+</div>
+<div class="mt-12 text-center md:hidden">
+<a class="inline-flex items-center gap-1 text-primary hover:text-primary/80 transition-colors" href="#">
+                            Vedi tutti i viaggi 
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Featured Destination (Organic Shapes) -->
+<section class="py-24 px-6 bg-background-light overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 md:gap-24">
+<!-- Image with Organic Shape -->
+<div class="w-full md:w-1/2 relative order-2 md:order-1">
+<div class="absolute top-[-20px] left-[-20px] w-32 h-32 border border-primary/20 rounded-full z-0"></div>
+<div class="relative z-10 rounded-[3rem] md:rounded-tr-[10rem] md:rounded-bl-[8rem] overflow-hidden shadow-2xl h-[400px] md:h-[500px] w-full">
+<img alt="Balinese temple gate near water with mountains in background" class="w-full h-full object-cover" data-alt="Balinese temple gate near water with mountains in background" data-location="Bali, Indonesia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw2T_EhGpBVTBJYPU5cD2QLT_zRvM-YefrP5yijZ2N10LRnhGvxHmeiE7FGduyOYiHaeSvVNbK1L18nf2wa916tg8lYjob6H2X9Jv-tpoZjtY40XgTUpMDzEskBVJsECA_zv8DIeYrmXcTPbd1dyI-qQ3hSxQcinEV8qMaQgu_pc-cn5oNoCAsHHpEnuNCfC1i5nRM1ADsok-GxO6sRURudlzEk_e0dh0d_QBcWGVlEBO_Kw5eA8RtqckHDfIjOd-lcvfMUTOFnL0"/>
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-6 py-3 rounded-full shadow-sm">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-lg">location_on</span>
+<span>Ubud, Bali</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Text Content -->
+<div class="w-full md:w-1/2 flex flex-col gap-6 order-1 md:order-2">
+<div class="inline-flex items-center gap-2 text-primary/80 font-medium">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span>Sfoglia le Destinazioni</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-display font-bold text-[#2d242b] leading-tight">
+                            Risveglia il Tuo Spirito nella <span class="italic text-primary font-light">Valle degli Dei</span>
+</h2>
+<p class="text-text-dark/70 text-lg font-light leading-relaxed">
+                            Scopri il cuore mistico di Bali. Il nostro ritiro signature a Ubud combina yoga quotidiano con vista sulle risaie, cerimonie di purificazione nei templi d'acqua sacri e camminate di meditazione silenziosa attraverso rigogliose giungle.
+                        </p>
+<div class="flex flex-col gap-4 mt-2">
+<div class="flex items-center gap-4 text-text-dark/80">
+<span class="bg-primary/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined text-xl">self_improvement</span>
+</span>
+<span>Meditazione Guidata & Yoga Giornaliero</span>
+</div>
+<div class="flex items-center gap-4 text-text-dark/80">
+<span class="bg-primary/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined text-xl">spa</span>
+</span>
+<span>Trattamenti Ayurvedici Inclusi</span>
+</div>
+<div class="flex items-center gap-4 text-text-dark/80">
+<span class="bg-primary/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined text-xl">temple_buddhist</span>
+</span>
+<span>Visite ai Templi Culturali</span>
+</div>
+</div>
+<div class="mt-6">
+<button class="px-8 py-3 rounded-full bg-text-dark text-white font-medium hover:bg-primary transition-colors duration-300 shadow-lg">
+                                Scopri i Ritiri di Bali
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-20 bg-primary/5 text-center px-4">
+<div class="max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-6xl text-primary/20 mb-6">format_quote</span>
+<p class="text-2xl md:text-3xl font-display italic text-[#2d242b] leading-relaxed mb-8">
+                        "Un'esperienza davvero trasformativa. Sono arrivata persa ed esausta, e me ne sono andata con un rinnovato senso di scopo e una profonda pace interiore. Dharma Travel gestisce ogni dettaglio con tanta grazia."
+                    </p>
+<div class="flex items-center justify-center gap-4">
+<div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+<img alt="Portrait of happy woman" class="w-full h-full object-cover" data-alt="Portrait of happy woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRn0bLn8v4KNin7vSKfcYsZuSOJL70iO0cMVSTkJ6v7y5bGUQN6yv-I6_xKSfnJ-AXMLS05PwEmx5s30D6SSBLx9BTSmnSdt07bVkEQ58JhfOlmwB958d_9VSHBb9SaQIbj8EYGZi49CxnlXLvUW2Kcb5Mx2_33ABtLusqRMW5E3XVskDJZ7M84Uii3fVrTg1wJX0M6GjQ7W0tyV6NuVVOBX0Api75jmfcQZyW7MAeOyJ8LlFLMT_2GKvmbSke0cPav4W3kuCThIY"/>
+</div>
+<div class="text-left">
+<div class="font-bold text-[#2d242b]">Elena Rossi</div>
+<div class="text-sm text-text-dark/60">Viaggiatrice, Ottobre 2023</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-24 px-6 relative overflow-hidden">
+<div class="max-w-4xl mx-auto bg-primary rounded-[3rem] p-10 md:p-16 text-center text-white relative shadow-2xl">
+<!-- Decor -->
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl">local_florist</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold mb-4 relative z-10">Inizia il Tuo Viaggio Interiore Oggi</h2>
+<p class="text-white/80 mb-8 max-w-lg mx-auto relative z-10">Unisciti alla nostra comunità di viaggiatori consapevoli. Ricevi ispirazione, aggiornamenti sui ritiri e intuizioni spirituali direttamente nella tua casella di posta.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto relative z-10">
+<input class="flex-1 rounded-full px-6 py-3 text-text-dark focus:ring-2 focus:ring-white/50 border-none outline-none" placeholder="Il tuo indirizzo email" type="email"/>
+<button class="bg-background-dark hover:bg-black text-white px-8 py-3 rounded-full font-bold transition-colors" type="button">Iscriviti</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light border-t border-primary/10 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
+<div class="mb-8 flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary">spa</span>
+<h2 class="text-2xl font-bold text-[#2d242b]">Dharma Travel</h2>
+</div>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 text-text-dark/70 font-medium">
+<a class="hover:text-primary transition-colors" href="index.html">Dharma</a>
+<a class="hover:text-primary transition-colors" href="details.html">Journeys</a>
+<a class="hover:text-primary transition-colors" href="contacts.html">Contatti</a>
+</div>
+<div class="max-w-lg mx-auto mb-10">
+<p class="text-primary italic font-display text-lg">
+                        "Il viaggio di mille miglia inizia con un solo passo."
+                    </p>
+<p class="text-xs text-text-dark/40 mt-2 uppercase tracking-widest">— Lao Tzu</p>
+</div>
+<div class="flex gap-6 mb-10">
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-text-dark hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-text-dark hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">facebook</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-text-dark hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">smart_display</span>
+</a>
+</div>
+<div class="w-full border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-text-dark/50 gap-4">
+<p>© 2026 Dharma Travel. Tutti i diritti riservati.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Termini di Servizio</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
